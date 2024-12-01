@@ -41,14 +41,12 @@
         text-decoration: none;
         color: white;
         background-color: #54acb4;
-        padding: 15px 30px;
+        padding: 10px 20px;
         border: 3px solid #54acb4; /* Add a border around the button */
         border-radius: 8px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         transition: all 0.3s ease;
         margin-top: 20px;
-        position: relative;
-        display: inline-block;
       }
 
       a:hover {
@@ -63,12 +61,17 @@
       }
 
       /* Image Styling */
+      .image-container {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px; /* Space between images */
+      }
+
       img {
-        width: 100vw; /* Make the image width the full width of the viewport */
-        height: 100vh; /* Set the height to the full height of the viewport */
-        object-fit: contain; /* Ensures the image fits the container without distortion */
+        width: 100vw; /* Full width of the viewport */
+        height: auto; /* Keep aspect ratio */
+        object-fit: contain;
         border-radius: 15px;
-        margin-top: 0;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       }
 
@@ -89,17 +92,23 @@
     <p>Nous sommes Gagawchewear, et pour tous les achats ou renseignements, ça se passera sur Vinted.</p>
     <a href="https://www.vinted.fr/member/243522334">Cliquez ici pour découvrir notre page Vinted</a><br>
 
-    <a href="https://www.vinted.fr/items/5442020275-maillot-equipe-japon">
-      <img alt="Adidas Maillot Extérieur Japon x Y-3 24" src="https://thumblr.uniid.it/product/370068/22d44d59ee5b.jpg?width=1920&format=webp&q=75" />
-    </a>
+    <div class="image-container">
+      <a href="https://www.vinted.fr/items/5442020275-maillot-equipe-japon">
+        <img alt="Adidas Maillot Extérieur Japon x Y-3 24" src="https://thumblr.uniid.it/product/370068/22d44d59ee5b.jpg?width=1920&format=webp&q=75" />
+      </a>
+    </div>
 
-    <a href="https://www.vinted.fr/items/5444991757-maillot-arsenal">
-      <img alt="Arsenal Maillot Bleu Concept 2025" src="https://shoptonmaillot.shop/cdn/shop/files/image_71917286-ed44-49bb-b1cd-32fb327a4d9a.jpg?v=1717701187&width=1080" />
-    </a>
+    <div class="image-container">
+      <a href="https://www.vinted.fr/items/5444991757-maillot-arsenal">
+        <img alt="Arsenal Maillot Bleu Concept 2025" src="https://shoptonmaillot.shop/cdn/shop/files/image_71917286-ed44-49bb-b1cd-32fb327a4d9a.jpg?v=1717701187&width=1080" />
+      </a>
+    </div>
 
-    <a href="https://www.vinted.fr/items/5445029585-maillot-lom">
-      <img alt="Olympique de Marseille maillot foot extérieur 2024 2025" src="https://img.fantaskycdn.com/aa792a21323929a003a3ad168d595003_1080x.jpeg" />
-    </a>
+    <div class="image-container">
+      <a href="https://www.vinted.fr/items/5445029585-maillot-lom">
+        <img alt="Olympique de Marseille maillot foot extérieur 2024 2025" src="https://img.fantaskycdn.com/aa792a21323929a003a3ad168d595003_1080x.jpeg" />
+      </a>
+    </div>
 
     <p>Pour voir plus de maillots ou d'autres produits à nous, n'hésitez pas à consulter notre page!</p>
   
