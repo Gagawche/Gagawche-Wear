@@ -13,6 +13,7 @@
         margin: 0;
         padding: 0;
         text-align: center;
+        overflow: hidden; /* Prevent scrolling */
       }
 
       h1 {
@@ -39,7 +40,7 @@
         font-size: 1.5em;
         text-decoration: none;
         color: white;
-        background-color: #000000;
+        background-color: #ffffff;
         padding: 15px 30px;
         border: none;
         border-radius: 8px;
@@ -61,10 +62,11 @@
 
       /* Image Styling */
       img {
-        max-width: 1080px; /* Set all images to the same max width */
-        height: auto;
+        width: 100vw; /* Make the image width the full width of the viewport */
+        height: 100vh; /* Set the height to the full height of the viewport */
+        object-fit: contain; /* Ensures the image fits the container without distortion */
         border-radius: 15px;
-        margin-top: 30px;
+        margin-top: 0;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       }
 
@@ -97,7 +99,8 @@
       <img alt="Olympique de Marseille maillot foot extérieur 2024 2025" src="https://img.fantaskycdn.com/aa792a21323929a003a3ad168d595003_1080x.jpeg" />
     </a>
 
-    <p>Pour voir plus de maillots ou d'aures produits à nous, n'hezitez pas à consulter notre page!</p>
+    <p>Pour voir plus de maillots ou d'autres produits à nous, n'hésitez pas à consulter notre page!</p>
   
 </body>
 </html>
+
