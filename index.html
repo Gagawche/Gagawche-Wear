@@ -13,7 +13,7 @@
         margin: 0;
         padding: 0;
         text-align: center;
-        overflow: hidden; /* Prevent scrolling */
+        overflow: auto; /* Allow scrolling */
       }
 
       h1 {
@@ -42,11 +42,13 @@
         color: white;
         background-color: #54acb4;
         padding: 15px 30px;
-        border: none;
+        border: 3px solid #54acb4; /* Add a border around the button */
         border-radius: 8px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         transition: all 0.3s ease;
         margin-top: 20px;
+        position: relative;
+        display: inline-block;
       }
 
       a:hover {
@@ -103,4 +105,3 @@
   
 </body>
 </html>
-
