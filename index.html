@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GagawcheWear</title>
     <style>
-      /* General Body Styling */
-      body {
+      
+	  body {
         background-color: #111;
         color: white;
         font-family: 'Arial', sans-serif;
@@ -33,7 +33,6 @@
         color: #888;
       }
 
-      /* Smooth Button */
       a {
         display: inline-block;
         font-size: 1.5em;
@@ -46,6 +45,7 @@
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         transition: all 0.3s ease;
         margin-top: 20px;
+        text-align: center;
       }
 
       a:hover {
@@ -59,22 +59,37 @@
         transform: translateY(0);
       }
 
-      /* Image Styling */
       img {
-        max-width: 1080px; /* Set all images to the same max width */
+        width: 100%; /* Les images remplissent le conteneur */
         height: auto;
         border-radius: 15px;
-        margin-top: 30px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       }
 
-      /* Content Section */
       p {
         font-size: 1.3em;
         color: #bbb;
         margin: 20px auto;
         width: 80%;
         max-width: 800px;
+      }
+
+      .image-container {
+        display: grid; /* Utilisation de grid au lieu de flex */
+        grid-template-columns: repeat(2, 48%); /* 2 images par ligne */
+        gap: 20px; /* Espacement entre les images */
+        margin-top: 30px;
+        justify-content: center; /* Centrer les images horizontalement */
+      }
+
+      .image-container a {
+        display: block; /* Assure que chaque image dans le lien prend toute la largeur du conteneur */
+      }
+
+      @media (max-width: 768px) {
+        .image-container {
+          grid-template-columns: 1fr; /* Une image par ligne sur les petits écrans */
+        }
       }
     </style>
   </head>
@@ -85,27 +100,30 @@
     <p>Nous sommes Gagawchewear, et pour tous les achats ou renseignements, ça se passera sur Vinted.</p>
     <a href="https://www.vinted.fr/member/243522334">Cliquez ici pour découvrir notre page Vinted</a><br>
 
-    <a href="https://www.vinted.fr/items/5442020275-maillot-equipe-japon">
-      <img alt="Adidas Maillot Extérieur Japon x Y-3 24" src="https://thumblr.uniid.it/product/370068/22d44d59ee5b.jpg?width=1920&format=webp&q=75" />
-    </a>
+    <div class="image-container">
+      <a href="https://www.vinted.fr/items/5442020275-maillot-equipe-japon">
+        <img alt="Adidas Maillot Extérieur Japon x Y-3 24" src="https://thumblr.uniid.it/product/370068/22d44d59ee5b.jpg?width=1920&format=webp&q=75" />
+      </a>
+      <a href="https://www.vinted.fr/items/5457359818-maillot-equipe-du-mexique">
+        <img alt="Maillot Exterieur Mexique 24" src="https://www.f2-shop.fr/cdn/shop/files/1_5df068fa-803f-43d8-b686-6e9f7daf7cc3_3024x.jpg?v=1712586418" />
+      </a>
+    </div>
 
-    <a href="https://www.vinted.fr/items/5457359818-maillot-equipe-du-mexique">
-      <img alt="Maillot Exterieur Mexique 24" src="https://www.f2-shop.fr/cdn/shop/files/1_5df068fa-803f-43d8-b686-6e9f7daf7cc3_3024x.jpg?v=1712586418" />
-    </a>
+    <div class="image-container">
+      <a href="https://www.vinted.fr/items/5459231376-maillot-allemagne-exterieur-24">
+        <img alt="Maillot Allemagne Extérieur 24" src="https://kitsgeneva.com/cdn/shop/files/Allemagne_Violet_Euro_2024_1.jpg?v=1724273120&width=600" />
+      </a>
+      <a href="https://www.vinted.fr/items/5444991757-maillot-arsenal">
+        <img alt="Arsenal Maillot Bleu Concept 2025" src="https://shoptonmaillot.shop/cdn/shop/files/image_71917286-ed44-49bb-b1cd-32fb327a4d9a.jpg?v=1717701187&width=1080" />
+      </a>
+    </div>
 
-     <a href="https://www.vinted.fr/items/5459231376-maillot-allemagne-exterieur-24">
-      <img alt="Maillot Allemagne Extérieur 24" src="https://kitsgeneva.com/cdn/shop/files/Allemagne_Violet_Euro_2024_1.jpg?v=1724273120&width=600" />
-    </a>
+    <div class="image-container">
+      <a href="https://www.vinted.fr/items/5445029585-maillot-lom">
+        <img alt="Olympique de Marseille maillot foot extérieur 2024 2025" src="https://img.fantaskycdn.com/aa792a21323929a003a3ad168d595003_1080x.jpeg" />
+      </a>
+    </div>
 
-    <a href="https://www.vinted.fr/items/5444991757-maillot-arsenal">
-      <img alt="Arsenal Maillot Bleu Concept 2025" src="https://shoptonmaillot.shop/cdn/shop/files/image_71917286-ed44-49bb-b1cd-32fb327a4d9a.jpg?v=1717701187&width=1080" />
-    </a>
-
-    <a href="https://www.vinted.fr/items/5445029585-maillot-lom">
-      <img alt="Olympique de Marseille maillot foot extérieur 2024 2025" src="https://img.fantaskycdn.com/aa792a21323929a003a3ad168d595003_1080x.jpeg" />
-    </a>
-
-    <p>Pour voir plus de maillots ou d'aures produits à nous, n'hezitez pas à consulter notre page!</p>
-  
-</body>
+    <p>Pour voir plus de maillots ou d'autres produits à nous, n'hésitez pas à consulter notre page!</p>
+  </body>
 </html>
